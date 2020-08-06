@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1303</width>
-    <height>697</height>
+    <width>1271</width>
+    <height>662</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,11 +26,11 @@
     <attribute name="horizontalHeaderCascadingSectionResizes">
      <bool>false</bool>
     </attribute>
-    <attribute name="horizontalHeaderMinimumSectionSize">
-     <number>39</number>
-    </attribute>
     <attribute name="horizontalHeaderDefaultSectionSize">
      <number>300</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>39</number>
     </attribute>
     <attribute name="horizontalHeaderStretchLastSection">
      <bool>true</bool>
@@ -45,7 +45,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1303</width>
+     <width>1271</width>
      <height>21</height>
     </rect>
    </property>

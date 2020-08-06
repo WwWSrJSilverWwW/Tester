@@ -8,10 +8,7 @@ class Authorization(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('build\Designers\AuthorizationDes.ui', self)
-        self.setFixedSize(int(0.2 * fixedSize[0]), int(0.2 * fixedSize[1]))
-        x = (QApplication.desktop().width() - self.size().width()) // 2
-        y = (QApplication.desktop().height() - self.size().height()) // 2
-        self.setGeometry(x, y, self.size().width(), self.size().height())
+        self.setFixedSize(self.size())
         self.setWindowTitle(RU_LABELS["authorization"])
         self.password.setEchoMode(QLineEdit.Password)
         self.okCancel.accepted.connect(self.accepted_def)

@@ -14,10 +14,7 @@ class Salutatory(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('build\Designers\SalutatoryDes.ui', self)
-        self.setFixedSize(int(1 / 3 * fixedSize[0]), int(2 / 3 * fixedSize[1]))
-        x = (QApplication.desktop().width() - self.size().width()) // 2
-        y = (QApplication.desktop().height() - self.size().height()) // 2
-        self.setGeometry(x, y, self.size().width(), self.size().height())
+        self.setFixedSize(self.size())
         self.setWindowTitle(RU_LABELS["salutatory"])
         self.kontrTest.clicked.connect(self.kontrTest_def)
         self.trainTest.clicked.connect(self.trainTest_def)

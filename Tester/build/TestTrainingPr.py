@@ -9,10 +9,7 @@ class TestTraining(QMainWindow):
     def __init__(self, test_name, pupil_name):
         super().__init__()
         uic.loadUi('build\Designers\TestControlDes.ui', self)
-        self.setFixedSize(*fixedSize)
-        x = (QApplication.desktop().width() - self.size().width()) // 2
-        y = (QApplication.desktop().height() - self.size().height()) // 2
-        self.setGeometry(x, y, self.size().width(), self.size().height())
+        self.setFixedSize(self.size())
         self.setWindowTitle(RU_LABELS["testTraining"])
         self.pupil_name = pupil_name
         self.test_name = test_name

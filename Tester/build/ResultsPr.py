@@ -9,10 +9,7 @@ class Results(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('build\Designers\ResultsDes.ui', self)
-        self.setFixedSize(*fixedSize)
-        x = (QApplication.desktop().width() - self.size().width()) // 2
-        y = (QApplication.desktop().height() - self.size().height()) // 2
-        self.setGeometry(x, y, self.size().width(), self.size().height())
+        self.setFixedSize(self.size())
         self.setWindowTitle(RU_LABELS["results"])
         self.model = QStandardItemModel()
         self.resultsTable.setModel(self.model)

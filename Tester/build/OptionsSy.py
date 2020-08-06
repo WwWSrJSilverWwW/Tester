@@ -1,7 +1,6 @@
-login = ""
-password = ""
+login = "Sergey"
+password = "12345"
 primitiveQuestions = ["обычный", "множественный"]
-fixedSize = (1280, 720)
 dataBase = "build/DataBase.db"
 
 RU_LABELS = {"salutatory": "Тестировщик",
