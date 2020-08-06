@@ -33,9 +33,9 @@ class TestTraining(QMainWindow):
         self.timer_for_time = QTimer(self)
         self.timer_for_time.timeout.connect(self.go_on_time)
         self.timer_for_time.start(1000)
-        self.contin_def()
+        self.contin_def(1)
 
-    def contin_def(self):
+    def contin_def(self, k=0):
         if self.now < len(self.test):
             right_answers = list(map(int, self.quest[7].split("|%$#")))
             for i in range(len(self.btn_group)):
@@ -49,7 +49,8 @@ class TestTraining(QMainWindow):
 
             self.maxGood.setText(str(self.max))
             self.nowGood.setText(str(self.ans))
-            self.time_of_pupil += self.timer.remainingTime() // 1000
+            if k == 0:
+                self.time_of_pupil += self.quest_time - self.timer.remainingTime() // 1000 - 1
 
             self.btn_group = []
             for i in reversed(range(self.verticalLayout.count())):
@@ -73,8 +74,11 @@ class TestTraining(QMainWindow):
             self.timer_for_time.stop()
             self.timer_for_time.start()
         else:
+            self.time_of_pupil += self.quest_time - self.timer.remainingTime() // 1000 - 1
+
             self.timer.stop()
             self.timer_for_time.stop()
+
             right_answers = list(map(int, self.quest[7].split("|%$#")))
             for i in range(len(self.btn_group)):
                 if self.btn_group[i].isChecked():
@@ -87,7 +91,6 @@ class TestTraining(QMainWindow):
 
             self.maxGood.setText(str(self.max))
             self.nowGood.setText(str(self.ans))
-            self.time_of_pupil += self.quest_time - self.timer.remainingTime() // 1000 - 1
 
             marks = list(reversed(list(map(float, sql_do_something(dataBase, f"""SELECT test_marks FROM tests WHERE 
                 test_name = '{self.test_name}'""")[0][0].split(";")))))

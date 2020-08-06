@@ -151,14 +151,14 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>370</x>
       <y>330</y>
-      <width>81</width>
+      <width>41</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>v.0.0.3.220220</string>
+     <string>v.0.1.0</string>
     </property>
    </widget>
   </widget>
