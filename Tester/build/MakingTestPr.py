@@ -16,8 +16,8 @@ class MakingTest(QMainWindow):
         self.types.addItems([x[0].upper() + x[1:] for x in primitiveQuestions])
         self.types.activated[str].connect(self.type_def)
         self.saveTest.clicked.connect(self.close)
-        self.test_id = max([x[0] for x in sql_do_something(dataBase, "SELECT test_id FROM tests")]) + 1
-        self.testNumber.setText(f"ТЕСТ {self.test_id}")
+        self.test_id = max(x[0] for x in (sql_do_something(dataBase, "SELECT test_id FROM tests") + [(0,)])) + 1
+        self.testNumber.setText(f"<b>Тест #{self.test_id}</b>")
         self.test_zs = []
         self.order = 1
         self.five.setValue(90)

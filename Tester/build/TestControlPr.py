@@ -105,7 +105,7 @@ class TestControl(QMainWindow):
             if mark == 0:
                 mark = 1
             QMessageBox.about(self, RU_LABELS["result"],
-                              f"{self.pupil_name}, Ваш результат - {self.ans} из {self.max}.\nВаша оценка - {mark}.")
+                              f"{self.pupil_name}, Ваш результат: {self.ans} из {self.max}.\nВаша оценка - {mark}.")
 
             self.close()
 

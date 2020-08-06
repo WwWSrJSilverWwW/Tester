@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>947</width>
-    <height>587</height>
+    <height>637</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -102,19 +102,19 @@
      <rect>
       <x>40</x>
       <y>490</y>
-      <width>641</width>
+      <width>411</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>*Ответы нужно вводить без нумерования и разделять один ответ от другого </string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Ответы нужно вводить без нумерования и разделять один ответ от другого&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="saveTest">
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>510</y>
+      <y>530</y>
       <width>161</width>
       <height>41</height>
      </rect>
@@ -375,7 +375,7 @@
       <x>470</x>
       <y>30</y>
       <width>451</width>
-      <height>521</height>
+      <height>541</height>
      </rect>
     </property>
    </widget>
@@ -393,7 +393,7 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Тест&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_16">
@@ -489,6 +489,32 @@ p, li { white-space: pre-wrap; }
      <rect>
       <x>20</x>
       <y>480</y>
+      <width>441</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>500</y>
+      <width>411</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;переводом строки. Номера правильных ответов нужно вводить через пробел&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
       <width>441</width>
       <height>20</height>
      </rect>

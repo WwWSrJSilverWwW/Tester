@@ -50,8 +50,12 @@ class Salutatory(QMainWindow):
             self.tt.show()
 
     def results_def(self):
-        self.res = Results()
-        self.res.show()
+        results = sql_do_something(dataBase, "SELECT * FROM results")
+        if len(results) == 0:
+            QMessageBox.about(self, RU_LABELS["warning"], RU_LABELS["noResults"])
+        else:
+            self.res = Results()
+            self.res.show()
 
     def authorization_def(self):
         self.auth = Authorization()

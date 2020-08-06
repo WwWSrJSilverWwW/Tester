@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1274</width>
+    <width>671</width>
     <height>557</height>
    </rect>
   </property>
@@ -32,7 +32,7 @@
      <rect>
       <x>10</x>
       <y>40</y>
-      <width>661</width>
+      <width>491</width>
       <height>411</height>
      </rect>
     </property>
@@ -54,9 +54,9 @@
    <widget class="QLabel" name="questDuration">
     <property name="geometry">
      <rect>
-      <x>1230</x>
+      <x>620</x>
       <y>100</y>
-      <width>21</width>
+      <width>41</width>
       <height>21</height>
      </rect>
     </property>
@@ -67,9 +67,9 @@
    <widget class="QLabel" name="nowTime">
     <property name="geometry">
      <rect>
-      <x>1130</x>
+      <x>520</x>
       <y>100</y>
-      <width>21</width>
+      <width>41</width>
       <height>21</height>
      </rect>
     </property>
@@ -80,7 +80,7 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>1180</x>
+      <x>570</x>
       <y>100</y>
       <width>16</width>
       <height>21</height>
@@ -93,7 +93,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>1130</x>
+      <x>520</x>
       <y>10</y>
       <width>111</width>
       <height>21</height>
@@ -106,9 +106,9 @@
    <widget class="QLabel" name="nowGood">
     <property name="geometry">
      <rect>
-      <x>1130</x>
+      <x>520</x>
       <y>40</y>
-      <width>20</width>
+      <width>41</width>
       <height>21</height>
      </rect>
     </property>
@@ -119,7 +119,7 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>1130</x>
+      <x>520</x>
       <y>70</y>
       <width>111</width>
       <height>21</height>
@@ -132,9 +132,9 @@
    <widget class="QLabel" name="maxGood">
     <property name="geometry">
      <rect>
-      <x>1230</x>
+      <x>620</x>
       <y>40</y>
-      <width>21</width>
+      <width>41</width>
       <height>21</height>
      </rect>
     </property>
@@ -145,7 +145,7 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>1180</x>
+      <x>570</x>
       <y>40</y>
       <width>16</width>
       <height>21</height>
@@ -161,7 +161,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1274</width>
+     <width>671</width>
      <height>21</height>
     </rect>
    </property>

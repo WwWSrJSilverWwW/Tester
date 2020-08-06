@@ -1,5 +1,5 @@
-login = "Sergey"
-password = "12345"
+login = ""
+password = ""
 primitiveQuestions = ["обычный", "множественный"]
 dataBase = "build/DataBase.db"
 
@@ -21,4 +21,5 @@ RU_LABELS = {"salutatory": "Тестировщик",
              "somethingClear": "Некоторые поля пустые",
              "oneOnly": "В данном типе вопроса должен быть один правильный ответ",
              "notExist": "Выбранного типа вопроса не существует",
-             "moreGoodAnswers": "Количество правильных больше самих ответов"}
+             "moreGoodAnswers": "Количество правильных больше самих ответов",
+             "noResults": "Никто еще не проходил тестирование"}
