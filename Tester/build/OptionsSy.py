@@ -1,9 +1,9 @@
-login = ""
-password = ""
+login = "Sergey"
+password = "12345"
 primitiveQuestions = ["обычный", "множественный"]
 dataBase = "build/DataBase.db"
 
-RU_LABELS = {"salutatory": "Тестировщик",
+RU_LABELS = {"salutatory": "Tester",
              "testControl": "Контрольное тестирование",
              "testTraining": "Обучающее тестирование",
              "results": "Результаты",
